@@ -15,7 +15,8 @@ define('App' , dirname(__DIR__) . DIRECTORY_SEPARATOR . 'App' . DIRECTORY_SEPARA
 require App . 'controller' . DIRECTORY_SEPARATOR .'function'. DIRECTORY_SEPARATOR .'message.php';
 
 
-require App . 'controller' . DIRECTORY_SEPARATOR .'function'. DIRECTORY_SEPARATOR .'requireViews'. DIRECTORY_SEPARATOR .'requireStockView.php';
+require App . 'controller' . DIRECTORY_SEPARATOR .'function'. DIRECTORY_SEPARATOR .'requireViews'. DIRECTORY_SEPARATOR .'requireStockProductView.php';
+
 
 
 

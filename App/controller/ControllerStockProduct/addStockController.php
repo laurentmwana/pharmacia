@@ -1,5 +1,5 @@
 <?php
-require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'function' . DIRECTORY_SEPARATOR . 'requireModelStock.php';
+require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'function' . DIRECTORY_SEPARATOR . 'requireModel.php';
 
 requireModelStock();
 
