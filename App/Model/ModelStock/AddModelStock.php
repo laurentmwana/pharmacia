@@ -63,29 +63,19 @@
      * @param [type] $info
      * @return array
      */
-    function infoModelStock( $info = null) : array
+    function infoModelStock( $info = null)
     {
-        if((isset($info) && !empty($info))){
-            $id = (int)trim($info);
-            
-            $req = connect()->prepare("SELECT * FROM stock WHERE id = :id");
-
-            $req->execute([':id' => $id]);
-
-             $result = $req->fetch(); 
-
-            if($result == true){
-                return $result;
-            } else {
-                return false;
-            }
-        } 
-
         
+        isset($info) && !empty($info) ?? $info ;
 
+        $prepare = connect()->prepare("SELECT * FROM stock WHERE id = ?");
+        $prepare->execute([$info]);
 
+        $data = $prepare->fetch();
 
-
+        if($data){
+            return $data;
+        }
     }
 
     

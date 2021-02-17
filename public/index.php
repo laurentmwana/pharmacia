@@ -33,7 +33,7 @@ if($url === 'dashboard'){
 }  elseif ($url === 'product/vends-product') {
     require_once PATH . 'blog' . DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR . 'product' . DIRECTORY_SEPARATOR.   'vending.php';
 } elseif ($url === 'product/stock-product/InfoStock') {
-    require_once PATH . 'blog' . DIRECTORY_SEPARATOR .  'info'  .  DIRECTORY_SEPARATOR  .'InfoStock.php';
+    require_once PATH . 'blog' . DIRECTORY_SEPARATOR .  DIRECTORY_SEPARATOR . 'product'  . DIRECTORY_SEPARATOR .  'info'  .  DIRECTORY_SEPARATOR  .'InfoStock.php';
 } elseif ($url === 'product/stock-product/UpdateStock') {
     require_once PATH . 'blog' . DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR . 'product' . DIRECTORY_SEPARATOR.   'Update' . DIRECTORY_SEPARATOR . 'UpdateStock.php';
 } else {

@@ -75,10 +75,10 @@
                         <td><?= $data['num'] ?> </td>
                         <td><?= $data['created_at'] ?> </td>
                         <td>
-                            <div class="btn-group btn-sm" role="group">
-                                <a href="/product/stock-product?delete=<?= $data['id']?>" class=" btn btn-danger btn-sm"><span class="fa fa-trash"></span></a>
-                                <a href="/product/stock-product/InfoStock?info=<?= $data['id']?>" class=" btn btn-info btn-sm"><span class="fa fa-info"></span></a>
-                                <a href="/product/stock-product/UpdateStock?update=<?= $data['id']?>" class="  btn btn-secondary btn-sm"><span class="fa fa-edit"></span></a>
+                            <div class="btn-group btn-sm " role="group">
+                                <a href="/product/stock-product?delete=<?= $data['id']?>" class=" btn-circle btn btn-danger btn-sm"><span class="fa fa-trash"></span></a>
+                                <a href="/product/stock-product/InfoStock?info=<?= $data['id']?>" class="btn-circle btn btn-info btn-sm"><span class="fa fa-info"></span></a>
+                                <a href="/product/stock-product/UpdateStock?update=<?= $data['id']?>" class="btn-circle  btn btn-secondary btn-sm"><span class="fa fa-edit"></span></a>
                             </div>
                         </td>
                     </tr>

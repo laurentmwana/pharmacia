@@ -90,13 +90,24 @@ function deleteProductStockController(string  $data = null ) : void
     }
 }
 
-
+/**
+ * verification de l'id pour faire la requete de modification 
+ *
+ * @param [type] $id
+ * @return void
+ */
 function ParamStockController( $id = null) 
 {
     return ParamUpdateStockModel($id);
 }
 
-
+/**
+ * Modification du produit dans le stock 
+ *
+ * @param array $update
+ * @param array $param
+ * @return void
+ */
 function UpdateStockController(array $update = null , array $param = null)
 {
     if(isset($update['update'])){ 
